@@ -12,7 +12,7 @@ class lame {
 		cwd		=> $tmpdir,
 		unless	=> 'which lame',
 		path	=> '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin',
-		require => Package['kernel-devel'],
+		require => Package[$::common::kernel_devel],
 	}
 }
 
